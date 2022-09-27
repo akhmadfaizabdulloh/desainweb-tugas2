@@ -6,18 +6,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.hamburger-line{
-    @apply w-[30px] h-[2px] my-2 block bg-white;
+.input-text {
+    @apply bg-neutral-100 focus:outline-none focus:ring focus:ring-secondary mt-4 rounded-md shadow-sm w-full py-3 px-6;
 }
 
-.hamburger-active > span:nth-child(1){
-    @apply rotate-45;
+.input-error {
+    @apply bg-neutral-100 focus:outline-none focus:ring focus:ring-green-800 mt-4 rounded-md shadow-sm w-full py-3 px-6 outline outline-2 outline-red-500;
 }
 
-.hamburger-active > span:nth-child(2){
-    @apply scale-0;
-}
-
-.hamburger-active > span:nth-child(3){
-    @apply  -rotate-45;
+.btn-primary {
+    @apply bg-secondary w-full py-4 rounded-lg text-white font-bold;
 }
